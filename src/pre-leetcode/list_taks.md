@@ -40,44 +40,29 @@ Understanding how to navigate arrays is essential. Here are ten exercises, sorte
 ## 2. Accumulator Variables
 Learn how to keep track of values during iteration. These exercises build upon each other in complexity:
 
-- [ ] Calculate the Sum of an Array. Write a function that calculates the sum of all elements in an array by accumulating the total as you iterate.
+- [X] Calculate the Sum of an Array. Write a function that calculates the sum of all elements in an array by accumulating the total as you iterate.
 
-- [ ] Find the Minimum and Maximum Elements Find the smallest and largest numbers in an array by updating minimum and maximum variables during iteration.
+- [X] Find the Minimum and Maximum Elements. Find the smallest and largest numbers in an array by updating minimum and maximum variables during iteration.
 
-Find the Indices of the Min and Max Elements
+- [X] Find the Indices of the Min and Max Elements In addition to finding the min and max values, keep track of their positions (indices) in the array.
 
-In addition to finding the min and max values, keep track of their positions (indices) in the array.
+- [X] Find the Two Smallest/Largest Elements Without Sorting Modify your approach to keep track of the two smallest and two largest elements during a single pass through the array.
 
-Find the Two Smallest/Largest Elements Without Sorting
+- [X] Count Occurrences of a Specific Element. Count how many times a given element appears in the array by incrementing a counter whenever you encounter it.
 
-Modify your approach to keep track of the two smallest and two largest elements during a single pass through the array.
+- [X] Count Occurrences of All Elements. Use a dictionary or map to count the number of times each unique element appears in the array during a single iteration.
 
-Count Occurrences of a Specific Element
+- [X] Find the Two Most Frequent Elements. Find the two elements that appear the most number of times in an array.
 
-Count how many times a given element appears in the array by incrementing a counter whenever you encounter it.
+### Compute Prefix Sums
 
-Count Occurrences of All Elements
+- [X] Create an array where each element at index i is the sum of all elements up to that index in the original array. We call this array prefix sums array.
 
-Use a dictionary or map to count the number of times each unique element appears in the array during a single iteration.
+- [X] Find the Sum of Elements in a Given Range.Given a range (start and end indices), write a function that calculates the sum of elements within that range by iterating from the start to the end index and accumulating the sum.
 
-Find the Two Most Frequent Elements
-
-Find the two elements that appear the most number of times in an array.
-
-Compute Prefix Sums
-
-Create an array where each element at index i is the sum of all elements up to that index in the original array. We call this array prefix sums array.
-
-Find the Sum of Elements in a Given Range
-
-Given a range (start and end indices), write a function that calculates the sum of elements within that range by iterating from the start to the end index and accumulating the sum.
-
-Efficient Range Sum Queries Using Prefix Sums
-
+- [ ] Efficient Range Sum Queries Using Prefix Sums
 After computing the prefix sums array, answer multiple range sum queries efficiently:
-
 Instead of summing elements for each query, use the prefix sums array to compute the sum of elements between indices i and j in constant time.
-
 Hint: The sum from index i to j can be calculated as prefix_sum[j] - prefix_sum[i - 1]. This method requires understanding how to manipulate indices and handle edge cases when i is 0.
 
 ## 3. Recursion
